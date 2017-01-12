@@ -9,7 +9,7 @@ const wordToColour = (text) => {
   };
   let colour = 'black';
   text.split(" ").forEach(word =>
-    colourMap[word.toLowerCase()] ? colour = colourMap[word] : '');
+    colourMap[word.toLowerCase()] ? colour = colourMap[word.toLowerCase()] : '');
   return colour;
 };
 
