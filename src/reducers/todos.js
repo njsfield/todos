@@ -4,6 +4,7 @@ const todo = (state = {}, action) => {
       return {
         id: action.id,
         text: action.text,
+        colour: action.colour,
         completed: false
       };
     case 'TOGGLE_TODO':

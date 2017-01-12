@@ -1,9 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
+import { inputClass, addButtonClass, inputContainerClass } from '../css/classnames';
+import wordToColour from '../helpers/wordtocolour';
 
 let AddTodo = ({ dispatch }) => {
   let input;
+  let colourClass = 'black';
+
+  let handleChange = (e) => {
+    colourClass = wordToColour(e.target.value);
+    input.className = `${inputClass} ${colourClass}`;
+  };
 
   return (
     <div>
@@ -12,19 +20,20 @@ let AddTodo = ({ dispatch }) => {
         if (!input.value.trim()) {
           return;
         }
-        dispatch(addTodo(input.value));
+        dispatch(addTodo(input.value, colourClass));
         input.value = '';
       }}>
-        <input placeholder="thing I should do" className="input-reset outline-0 pa3 pl0 w-80 bb bt-0 bl-0 br-0 ml3" ref={node => {
+      <div className={inputContainerClass}>
+        <input placeholder="thing I should do" onChange={handleChange} className={inputClass} ref={node => {
           input = node;
         }} />
-      <button type="submit" className="dn">
-          Add
-        </button>
+      <button type="submit" className={addButtonClass}>+</button>
+      </div>
       </form>
     </div>
   );
 };
+
 AddTodo = connect()(AddTodo);
 
 export default AddTodo;

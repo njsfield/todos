@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { footerLinkClass } from '../css/classnames';
 
 const Link = ({ active, children, onClick }) => {
   if (active) {
@@ -6,7 +7,7 @@ const Link = ({ active, children, onClick }) => {
   }
 
   return (
-    <a className="pink no-underline" href="#"
+    <a className={footerLinkClass} href="#"
        onClick={e => {
          e.preventDefault();
          onClick();

@@ -1,8 +1,9 @@
 import React from 'react';
 import FilterLink from '../containers/filterlink';
+import { footerClass } from '../css/classnames';
 
 const Footer = () => (
-  <p className="pl5-l pl2 fixed bottom-0 left-0">
+  <p className={footerClass}>
     Show:
     {" "}
     <FilterLink filter="SHOW_ALL">
