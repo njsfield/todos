@@ -1,16 +1,12 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { addTodo } from '../actions';
 import { inputClass, addButtonClass, inputContainerClass } from '../css/classnames';
-import wordToColour from '../helpers/wordtocolour';
 
-let AddTodo = ({ dispatch }) => {
+let TodoForm = ({ addtodo, trackvalue, colourclass = 'black'}) => {
   let input;
-  let colourClass = 'black';
+  let combinedClassName = inputClass + ' ' + colourclass;
 
   let handleChange = (e) => {
-    colourClass = wordToColour(e.target.value);
-    input.className = `${inputClass} ${colourClass}`;
+    trackvalue(e.target.value);
   };
 
   return (
@@ -20,11 +16,11 @@ let AddTodo = ({ dispatch }) => {
         if (!input.value.trim()) {
           return;
         }
-        dispatch(addTodo(input.value, colourClass));
+        addtodo(input.value, colourclass);
         input.value = '';
       }}>
       <div className={inputContainerClass}>
-        <input placeholder="thing I should do" onChange={handleChange} className={inputClass} ref={node => {
+        <input placeholder="thing I should do" onChange={handleChange} className={combinedClassName} ref={node => {
           input = node;
         }} />
       <button type="submit" className={addButtonClass}>+</button>
@@ -34,6 +30,4 @@ let AddTodo = ({ dispatch }) => {
   );
 };
 
-AddTodo = connect()(AddTodo);
-
-export default AddTodo;
+export default TodoForm;

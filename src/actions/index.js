@@ -22,3 +22,10 @@ export const toggleTodo = (id) => {
     id
   };
 };
+
+export const trackValue = (text) => {
+  return {
+    type: 'TRACK_VALUE',
+    text
+  };
+};
