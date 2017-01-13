@@ -3,7 +3,7 @@
 // App Container Class
 export const appContainerClass = 'mw7 pl5-l';
 // Title Class
-export const titleClass = 'f2 f1-l pa3';
+export const titleClass = 'f1 f-5-l pa3';
 // Input Container Class
 export const inputContainerClass = 'pa3 relative';
 // Input Class

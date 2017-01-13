@@ -694,6 +694,7 @@ img { max-width: 100%; }
 .serif { font-family: georgia, times, serif; }
 .system-sans-serif { font-family: sans-serif; }
 .system-serif { font-family: serif; }
+.futura { font-family: 'futura', sans-serif; } 
 /* Monospaced Typefaces (for code) */
 /* From http://cssfontstack.com */
 code, .code { font-family: Consolas, monaco, monospace; }
