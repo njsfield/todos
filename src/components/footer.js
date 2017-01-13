@@ -1,5 +1,6 @@
 import React from 'react';
 import FilterLink from '../containers/filterlink';
+import ClearButton from '../containers/clearbutton';
 import { footerClass } from '../css/classnames';
 
 const Footer = () => (
@@ -17,6 +18,7 @@ const Footer = () => (
     <FilterLink filter="SHOW_COMPLETED">
       Completed
     </FilterLink>
+    <ClearButton />
   </p>
 );
 

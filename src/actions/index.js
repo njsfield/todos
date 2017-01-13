@@ -6,6 +6,12 @@ export const addTodo = (text, colour) => {
   };
 };
 
+export const clearState = () => {
+  return {
+    type: 'CLEAR_STATE'
+  };
+};
+
 export const setVisibilityFilter = (filter) => {
   return {
     type: 'SET_VISIBILITY_FILTER',
