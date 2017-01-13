@@ -22,15 +22,15 @@
 @keyframes shrink-right {
   0% {width: 100%}
   14% {width: 100%}
-  15% {width: 77%}
-  29% {width: 77%}
-  30% {width: 61%}
-  44% {width: 61%}
+  15% {width: 79%}
+  29% {width: 79%}
+  30% {width: 63%}
+  44% {width: 63%}
   45% {width: 46%}
   59% {width: 46%}
   60% {width: 30%}
   74% {width: 30%}
-  75% {width: 15%}
-  99% {width: 15%}
+  75% {width: 13%}
+  99% {width: 13%}
   100% {width: 0%}
 }
