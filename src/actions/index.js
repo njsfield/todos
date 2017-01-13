@@ -1,8 +1,6 @@
-let nextTodoId = 0;
 export const addTodo = (text, colour) => {
   return {
     type: 'ADD_TODO',
-    id: nextTodoId++,
     text,
     colour
   };
