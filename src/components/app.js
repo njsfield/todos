@@ -6,7 +6,7 @@ import { appContainerClass, titleClass } from '../css/classnames';
 
 const App = () => (
   <div className={appContainerClass}>
-    <h2 className={titleClass}>Todos.</h2>
+    <h2><span className={titleClass}>Todos.</span></h2>
     <AddColouredTodo />
     <VisibleTodoList />
     <Footer />

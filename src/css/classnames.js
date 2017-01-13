@@ -1,9 +1,9 @@
 /* Tachyon Class Names */
 
 // App Container Class
-export const appContainerClass = 'mw7 pl5-l';
+export const appContainerClass = 'mw7 pl5-l pt4';
 // Title Class
-export const titleClass = 'f1 f-5-l pa3';
+export const titleClass = 'f1 f-5-l pa3 todo-in';
 // Input Container Class
 export const inputContainerClass = 'pa3 relative';
 // Input Class
