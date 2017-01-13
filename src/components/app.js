@@ -1,13 +1,13 @@
 import React from 'react';
 import Footer from './footer';
-import AddTodo from '../containers/addtodo';
+import AddColouredTodo from '../containers/addcolouredtodo';
 import VisibleTodoList from '../containers/visibletodolist';
 import { appContainerClass, titleClass } from '../css/classnames';
 
 const App = () => (
   <div className={appContainerClass}>
     <h2 className={titleClass}>Todos.</h2>
-    <AddTodo />
+    <AddColouredTodo />
     <VisibleTodoList />
     <Footer />
   </div>
