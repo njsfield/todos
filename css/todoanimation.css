@@ -1,0 +1,36 @@
+/* Todo Animation */
+
+.todo-in {
+  position: relative;
+}
+
+.todo-in:after {
+  content: '';
+  display: block;
+  background: white;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation-name: shrink-right;
+  animation-duration: 2s;
+  animation-delay: 0;
+  animation-direction: forwards;
+}
+
+@keyframes shrink-right {
+  0% {width: 100%}
+  14% {width: 100%}
+  15% {width: 77%}
+  29% {width: 77%}
+  30% {width: 61%}
+  44% {width: 61%}
+  45% {width: 46%}
+  59% {width: 46%}
+  60% {width: 30%}
+  74% {width: 30%}
+  75% {width: 15%}
+  99% {width: 15%}
+  100% {width: 0%}
+}
