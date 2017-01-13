@@ -9,7 +9,7 @@ export const inputContainerClass = 'pa3 relative';
 // Input Class
 export const inputClass = 'input-reset outline-0 pb2 f4 pl0 w-100 bb bt-0 bl-0 br-0';
 // Add Button Class
-export const addButtonClass = 'absolute top-0 right-1 f6 link dim br3 bn ph3 pv2 dib white bg-black grow-large pointer outline-0';
+export const addButtonClass = 'absolute top-0-5 right-1 lh-solid input-reset button-reset f6 link dim br3 bn ph3 pv2 dib mb1 white bg-black grow-large pointer outline-0';
 // List Container Class
 export const listContainerClass = '';
 // List Item Class
