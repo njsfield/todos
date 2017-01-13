@@ -13,10 +13,30 @@
   position: absolute;
   top: 0;
   right: 0;
-  animation-name: shrink-right;
-  animation-duration: 2s;
-  animation-delay: 0;
-  animation-direction: forwards;
+  -webkit-animation-name: shrink-right;
+          animation-name: shrink-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
+@-webkit-keyframes shrink-right {
+  0% {width: 100%}
+  14% {width: 100%}
+  15% {width: 79%}
+  29% {width: 79%}
+  30% {width: 63%}
+  44% {width: 63%}
+  45% {width: 46%}
+  59% {width: 46%}
+  60% {width: 30%}
+  74% {width: 30%}
+  75% {width: 13%}
+  99% {width: 13%}
+  100% {width: 0%}
 }
 
 @keyframes shrink-right {
