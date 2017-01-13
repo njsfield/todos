@@ -21,4 +21,4 @@ export const footerClass = 'pl5-l ml3-l pl3 fixed bottom-0 left-0 mw7 w-100';
 // Footer Link Class
 export const footerLinkClass = 'no-underline pink';
 // Clear Button Class
-export const clearButtonClass = 'no-underline f1 black fixed br3 pa2 bottom-0 right-0 mr2 pt2 bn bg-white';
+export const clearButtonClass = 'no-underline f1 black fixed br3 pa2 pointer bottom-0 right-0 mr2 pt2 bn bg-white';
